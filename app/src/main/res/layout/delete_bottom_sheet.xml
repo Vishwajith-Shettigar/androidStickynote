@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/bottomsheet"
+
+    >
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="7dp"
+        android:background="@drawable/delete_indicator_line"
+android:layout_margin="10dp"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Want to delete ?"
+android:gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+
+        android:textColor="@color/black"
+
+
+        />
+<TextView
+    android:layout_margin="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="no"
+    android:id="@+id/deleteno"
+    android:textSize="20dp"
+    android:gravity="center"
+    android:textStyle="bold"
+android:padding="10dp"
+android:textColor="@color/black"
+
+    android:background="@drawable/no_delete"
+    />
+    <TextView
+        android:id="@+id/deleteyes"
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="yes"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:textColor="@color/black"
+
+        android:background="@drawable/yes_delete"
+        />
+
+</LinearLayout>

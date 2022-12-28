@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+  android:theme="@style/bodymain"
+    >
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        app:title="Note"
+
+android:theme="@style/bodymain"
+        android:layout_height="wrap_content"
+        app:menu="@menu/search"
+        />
+<LinearLayout
+    android:layout_below="@+id/appbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/filter"
+    android:layout_margin="5dp"
+    android:theme="@style/bodymain"
+
+    >
+
+
+
+    <ImageView
+    android:layout_width="30dp"
+android:layout_margin="10dp"
+    android:layout_height="30dp"
+    android:background="@drawable/filterback"
+
+    android:src="@drawable/ic_launcher_foreground"
+    />
+
+    <TextView
+        android:id="@+id/nofilter"
+        android:layout_marginEnd="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:textColor="@color/black"
+        android:background="@drawable/filterunshape"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="no filter"/>
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/htol"
+        android:layout_marginEnd="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/filterunshape"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="old"/>
+
+    <TextView
+        android:id="@+id/ltoh"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/black"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/filterunshape"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="latest"/>
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+android:layout_below="@id/filter"
+        android:id="@+id/notesrecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/newnotebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+
+
+        android:layout_marginEnd="26dp"
+        android:layout_marginBottom="26dp"
+        android:backgroundTint="@color/red"
+        android:src="@drawable/ic_baseline_add_24" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TakeNotes" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/red</item>
+
+        <item name="colorOnPrimary">@color/red</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="progressbar" >
+        <!-- Primary brand color. -->
+        <item name="colorSecondary">@color/red</item>
+
+
+    </style>
+
+    <style name="BottomSheetStyle" parent="Theme.Design.BottomSheetDialog" >
+        <!-- Primary brand color. -->
+        <item name="bottomSheetStyle">@style/Modal</item>
+
+
+    </style>
+    <style name="Modal" parent="Widget.Design.BottomSheet.Modal" >
+        <!-- Primary brand color. -->
+        <item name="android:background">@drawable/delete_sheet</item>
+
+
+    </style>
+
+    <style name="bodymain" >
+        <!-- Primary brand color. -->
+        <item name="android:background">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+</resources>
