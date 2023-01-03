@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:theme="@style/bodymain"
-    tools:context=".activity.SplashScreen">
+    tools:context="com.lykanotes.takenotes.activity.SplashScreen">
 
     <ImageView
         android:theme="@style/bodymain"
@@ -29,7 +29,7 @@
         android:layout_marginTop="220dp"
         android:fontFamily="serif-monospace"
         android:gravity="center"
-        android:text=" Keep Notes"
+        android:text=" Lyka Notes"
         android:theme="@style/bodymain"
         android:textSize="39dp"
         android:textStyle="bold"

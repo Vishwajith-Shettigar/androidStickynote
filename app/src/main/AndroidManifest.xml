@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+
+
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
@@ -14,28 +16,28 @@
         android:theme="@style/Theme.TakeNotes"
         tools:targetApi="31">
         <activity
-            android:name=".activity.Setting"
+            android:name="com.lykanotes.takenotes.activity.Setting"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.UpdatenoteActivity"
+            android:name="com.lykanotes.takenotes.activity.UpdatenoteActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.InsertnoteActivity"
+            android:name="com.lykanotes.takenotes.activity.InsertnoteActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".activity.SplashScreen"
+            android:name="com.lykanotes.takenotes.activity.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,7 +50,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.lykanotes.takenotes.MainActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"
@@ -56,9 +58,9 @@
         </activity>
 
         <receiver
-            android:name=".AppWidget"
+            android:name="com.lykanotes.takenotes.AppWidget"
             android:exported="true"
-            android:label="notes">
+            android:label=" sticky Lyka notes">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>

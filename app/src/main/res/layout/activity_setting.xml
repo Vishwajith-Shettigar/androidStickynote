@@ -7,7 +7,7 @@
     android:id="@+id/settinglayout"
     android:orientation="vertical"
     android:theme="@style/bodymain"
-    tools:context=".activity.Setting">
+    tools:context="com.lykanotes.takenotes.activity.Setting">
     <com.google.android.material.appbar.MaterialToolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
